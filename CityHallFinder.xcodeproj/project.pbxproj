@@ -14,6 +14,9 @@
 		285D36391A02A88D00938605 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 285D36381A02A88D00938605 /* Images.xcassets */; };
 		285D363C1A02A88D00938605 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 285D363A1A02A88D00938605 /* LaunchScreen.xib */; };
 		285D36481A02A88D00938605 /* CityHallFinderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 285D36471A02A88D00938605 /* CityHallFinderTests.m */; };
+		285D36521A02A98500938605 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285D36511A02A98500938605 /* MapKit.framework */; };
+		285D36541A02AA2300938605 /* locations.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 285D36531A02AA2300938605 /* locations.gpx */; };
+		285D36561A02B0E300938605 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285D36551A02B0E300938605 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		285D36411A02A88D00938605 /* CityHallFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CityHallFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		285D36461A02A88D00938605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		285D36471A02A88D00938605 /* CityHallFinderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityHallFinderTests.m; sourceTree = "<group>"; };
+		285D36511A02A98500938605 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		285D36531A02AA2300938605 /* locations.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = locations.gpx; sourceTree = "<group>"; };
+		285D36551A02B0E300938605 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				285D36561A02B0E300938605 /* CoreLocation.framework in Frameworks */,
+				285D36521A02A98500938605 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +71,8 @@
 		285D361F1A02A88D00938605 = {
 			isa = PBXGroup;
 			children = (
+				285D36551A02B0E300938605 /* CoreLocation.framework */,
+				285D36511A02A98500938605 /* MapKit.framework */,
 				285D362A1A02A88D00938605 /* CityHallFinder */,
 				285D36441A02A88D00938605 /* CityHallFinderTests */,
 				285D36291A02A88D00938605 /* Products */,
@@ -98,6 +108,7 @@
 			children = (
 				285D362C1A02A88D00938605 /* Info.plist */,
 				285D362D1A02A88D00938605 /* main.m */,
+				285D36531A02AA2300938605 /* locations.gpx */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -201,6 +212,7 @@
 			files = (
 				285D36371A02A88D00938605 /* Main.storyboard in Resources */,
 				285D363C1A02A88D00938605 /* LaunchScreen.xib in Resources */,
+				285D36541A02AA2300938605 /* locations.gpx in Resources */,
 				285D36391A02A88D00938605 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
